@@ -1,0 +1,78 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(135deg, #667282, #863479); /* gradient background */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(118, 31, 144, 0.6);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    width: 110px;
+    height: 120px;
+    border-radius: 0;     /* Square shape */
+    margin-top: 10px;
+    border: 3px solid white;
+    object-fit: cover;    /* Keeps it neat if image is uneven */
+}
+
+
+nav {
+    background-color: rgba(207, 117, 204, 0.7);
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent box */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+}
